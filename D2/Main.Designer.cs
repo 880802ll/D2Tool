@@ -43,8 +43,11 @@
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             button1 = new Button();
+            label1 = new Label();
+            groupBox3 = new GroupBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // btnStartAccount
@@ -62,10 +65,10 @@
             // richTextBox1
             // 
             richTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            richTextBox1.Location = new Point(14, 47);
+            richTextBox1.Location = new Point(14, 54);
             richTextBox1.Margin = new Padding(7, 6, 7, 6);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1411, 329);
+            richTextBox1.Size = new Size(1941, 322);
             richTextBox1.TabIndex = 1;
             richTextBox1.Text = "";
             // 
@@ -181,18 +184,19 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(richTextBox1);
+            groupBox2.Font = new Font("Microsoft YaHei UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             groupBox2.Location = new Point(71, 724);
             groupBox2.Margin = new Padding(7, 6, 7, 6);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(7, 6, 7, 6);
-            groupBox2.Size = new Size(1439, 388);
+            groupBox2.Size = new Size(1969, 388);
             groupBox2.TabIndex = 8;
             groupBox2.TabStop = false;
             groupBox2.Text = "日志";
             // 
             // button1
             // 
-            button1.Location = new Point(1183, 564);
+            button1.Location = new Point(1122, 564);
             button1.Name = "button1";
             button1.Size = new Size(313, 113);
             button1.TabIndex = 9;
@@ -200,12 +204,34 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
-            // Form1
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label1.Font = new Font("Microsoft YaHei UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(6, 45);
+            label1.Name = "label1";
+            label1.Size = new Size(906, 434);
+            label1.TabIndex = 11;
+            label1.Text = "需要在运行目录下安装微软Handle.exe官方工具，并改名为handle.exe，可以添加账号信息直接进行多开，或者只使用杀进程功能手动开战网然后杀进程，目前使用账号信息直接登录多开时，亚服连接存在问题，无法连接战网，可以选择其他服，默认不选时美服。";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(label1);
+            groupBox3.Font = new Font("Microsoft YaHei UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox3.Location = new Point(1122, 58);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(918, 482);
+            groupBox3.TabIndex = 12;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "说明";
+            // 
+            // Main
             // 
             AutoScaleDimensions = new SizeF(16F, 35F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(1576, 1132);
+            ClientSize = new Size(2103, 1132);
+            Controls.Add(groupBox3);
             Controls.Add(button1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -218,12 +244,13 @@
             Controls.Add(btnStartAccount);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(7, 6, 7, 6);
-            Name = "Form1";
+            Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "D2多开";
             Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -244,5 +271,7 @@
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private Button button1;
+        private Label label1;
+        private GroupBox groupBox3;
     }
 }

@@ -24,9 +24,6 @@ namespace D2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-
-
             if (lstProfiles.Items.Count > 0)
             {
                 if (lstProfiles.SelectedItems.Count > 0)
@@ -41,10 +38,7 @@ namespace D2
                             break;
                         }
                     }
-
                     if (accountInfo == null) { return; }
-
-
                     try
                     {
                         Helpers.KillAllD2RInstanceCheckerHandle();
@@ -57,9 +51,6 @@ namespace D2
                     }
                 }
             }
-
-
-
         }
 
         private void addApplicationLog(string logdata, bool force = false)
