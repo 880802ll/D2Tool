@@ -65,6 +65,7 @@
             // richTextBox1
             // 
             richTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            richTextBox1.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox1.Location = new Point(14, 54);
             richTextBox1.Margin = new Padding(7, 6, 7, 6);
             richTextBox1.Name = "richTextBox1";
@@ -212,7 +213,7 @@
             label1.Name = "label1";
             label1.Size = new Size(906, 434);
             label1.TabIndex = 11;
-            label1.Text = "需要在运行目录下安装微软Handle.exe官方工具，并改名为handle.exe，可以添加账号信息直接进行多开，或者只使用杀进程功能手动开战网然后杀进程，目前使用账号信息直接登录多开时，亚服连接存在问题，无法连接战网，可以选择其他服，默认不选时美服。";
+            label1.Text = "1.需要在运行目录下安装微软Handle.exe官方工具，并改名为handle.exe\r\n2.可以添加账号信息直接进行多开，或者只使用杀进程功能手动开战网然后杀进程\r\n3.目前使用账号信息直接登录多开时，亚服连接存在问题，无法连接战网，可以选择其他服，默认不选时美服。";
             // 
             // groupBox3
             // 

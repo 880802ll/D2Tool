@@ -148,11 +148,11 @@ namespace D2
                     " -username " + accountInfo.EmailAddress + " -password " + accountInfo.Password + " -address " + realm + ".actual.battle.net "
                     + (!string.IsNullOrEmpty(accountInfo.Mod) ? accountInfo.Mod : ""));
 
-                addApplicationLog("新D2R窗口运行成功，PID: " + gameProcess.Id.ToString());
+                addApplicationLog($"运行账号:{accountInfo.EmailAddress}，PID: " + gameProcess.Id.ToString());
 
                 RenameD2RWindowWithDelayThreadSafe(gameProcess.Id, accountInfo.ProfileName, 7000);
 
-                addApplicationLog("窗口改名为 : " + accountInfo.ProfileName);
+                addApplicationLog("窗口改名为:" + accountInfo.ProfileName);
 
 
             }
@@ -370,7 +370,6 @@ namespace D2
                 addApplicationLog("Please retry the operation, if it does fail, please check the logs for possible errors.");
                 addApplicationLog("杀进程 -> 失败");
             }
-
         }
     }
 }

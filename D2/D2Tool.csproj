@@ -6,6 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>D2Tool.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="D2Tool.ico" />
+  </ItemGroup>
 
 </Project>
